@@ -476,4 +476,8 @@ public class InfiniteFireArray<T> {
         };
         query.addListenerForSingleValueEvent(valueEventListener);
     }
+
+    public int getPageSize() {
+        return pageSize;
+    }
 }
