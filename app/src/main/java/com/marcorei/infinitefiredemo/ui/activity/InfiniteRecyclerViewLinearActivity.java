@@ -254,7 +254,7 @@ public class InfiniteRecyclerViewLinearActivity extends AppCompatActivity{
             int viewType = getItemViewType(position);
             switch(viewType) {
                 case VIEW_TYPE_CONTENT:
-                    Chat chat = snapshots.getItem(position - indexOffset).getValue();
+                    Chat chat = getItem(position).getValue();
                     if(chat == null) {
                         chat = new Chat("N/A","N/A");
                     }

@@ -72,7 +72,7 @@ public abstract class InfiniteFireRecyclerViewAdapter<T> extends RecyclerView.Ad
     }
 
     public InfiniteFireSnapshot<T> getItem(int position) {
-        return snapshots.getItem(position + indexOffset);
+        return snapshots.getItem(position - indexOffset);
     }
 
     /**
