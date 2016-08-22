@@ -30,9 +30,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support:recyclerview-v7:24.0.0'
 
-    compile 'com.google.firebase:firebase-database:9.2.0'
-
     compile project(':infinitefire')
 }
-
-apply plugin: 'com.google.gms.google-services'

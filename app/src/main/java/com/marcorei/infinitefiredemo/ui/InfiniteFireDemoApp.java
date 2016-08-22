@@ -1,3 +1,12 @@
 package com.marcorei.infinitefiredemo.ui;
 
-public class InfiniteFireDemoApp extends android.app.Application {}
+import com.firebase.client.Firebase;
+
+public class InfiniteFireDemoApp extends android.app.Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Firebase.setAndroidContext(this);
+    }
+}
